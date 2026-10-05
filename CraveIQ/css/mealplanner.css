@@ -1,0 +1,372 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8f9fa;
+    color:#333;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:white;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#ff5a1f;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#444;
+    font-weight:500;
+    transition:.3s;
+}
+
+.navbar a:hover,
+.navbar .active{
+    color:#ff5a1f;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+    background:linear-gradient(135deg,#ff6b35,#ff8c42);
+    color:white;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    opacity:.95;
+}
+
+/* ================= PLANNER ================= */
+
+.planner{
+    display:flex;
+    justify-content:center;
+    margin-top:-50px;
+    padding:20px;
+}
+
+.planner-card{
+
+    background:white;
+    width:500px;
+    max-width:95%;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+.planner-card h2{
+
+    text-align:center;
+    margin-bottom:25px;
+    color:#ff5a1f;
+
+}
+
+.input-box{
+
+    display:flex;
+    flex-direction:column;
+    margin-bottom:18px;
+
+}
+
+.input-box label{
+
+    margin-bottom:8px;
+    font-weight:600;
+
+}
+
+.input-box input,
+.input-box select{
+
+    padding:14px;
+    border-radius:10px;
+    border:1px solid #ddd;
+    outline:none;
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.input-box input:focus,
+.input-box select:focus{
+
+    border-color:#ff5a1f;
+
+}
+
+button{
+
+    width:100%;
+    border:none;
+    padding:15px;
+
+    background:#ff5a1f;
+
+    color:white;
+
+    font-size:16px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#ff7a45;
+    transform:translateY(-3px);
+
+}
+
+/* ================= RESULT ================= */
+
+.result-section{
+
+    display:flex;
+    justify-content:center;
+    padding:40px 20px;
+
+}
+
+.result-card{
+
+    width:650px;
+    max-width:95%;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.empty{
+
+    text-align:center;
+
+    color:#666;
+
+}
+
+.empty i{
+
+    font-size:55px;
+    color:#ff5a1f;
+    margin-bottom:15px;
+
+}
+
+.result-card img{
+
+    width:100%;
+    height:260px;
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+.restaurant-name{
+
+    margin-top:20px;
+    font-size:28px;
+    color:#ff5a1f;
+
+}
+
+.meal{
+
+    font-size:24px;
+    margin-top:12px;
+
+}
+
+.info{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+    margin:25px 0;
+
+}
+
+.info div{
+
+    background:#fff5f0;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+}
+
+.info h3{
+
+    color:#ff5a1f;
+    margin-bottom:5px;
+
+}
+
+.reason{
+
+    background:#f5fff7;
+
+    border-left:5px solid #22c55e;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    margin-top:20px;
+
+}
+
+/* ================= HOW IT WORKS ================= */
+
+.how{
+
+    padding:70px 8%;
+
+    text-align:center;
+
+}
+
+.how h2{
+
+    margin-bottom:45px;
+    color:#ff5a1f;
+
+}
+
+.steps{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    gap:25px;
+
+}
+
+.step{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.step:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.step i{
+
+    font-size:45px;
+
+    color:#ff5a1f;
+
+    margin-bottom:15px;
+
+}
+
+.step h3{
+
+    margin-bottom:12px;
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.hero h1{
+
+    font-size:30px;
+
+}
+
+.navbar{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.navbar ul{
+
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+
+}
+
+.info{
+
+    grid-template-columns:1fr;
+
+}
+
+}

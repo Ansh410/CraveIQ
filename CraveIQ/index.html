@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CraveIQ | AI-Powered Food Discovery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="investor.html">Investor Relations</a></li>
+            <li><a href="add.html">Add restaurant</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Signup</a></li>
+            <li><a href="mealplanner2.html">🤖 Meal Planner</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="hero">
+            <!-- use img/bg.png as background -->
+
+            <h1>Discover Food Intelligently</h1>
+
+            <p class="tagline">
+                AI-powered food discovery based on your mood, taste, and budget.
+            </p>
+
+            <input type="text" id="search" placeholder="Search restaurants, cuisines or dishes...">
+
+
+
+        </section>
+
+
+
+        <section class="mood-section">
+
+            <h2>What's your mood today?</h2>
+
+            <div class="mood-buttons">
+
+                <button data-mood="All">🍽 All</button>
+
+                <button data-mood="Happy">😊 Happy</button>
+
+                <button data-mood="Gym">💪 Gym</button>
+
+                <button data-mood="Study">📚 Study</button>
+
+                <button data-mood="Party">🎉 Party</button>
+
+                <button data-mood="Date">❤️ Date</button>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="category-section">
+
+            <h2>Browse by Category</h2>
+
+            <div class="category-buttons">
+
+                <button data-category="All">All</button>
+
+                <button data-category="Pizza">🍕 Pizza</button>
+
+                <button data-category="Burger">🍔 Burger</button>
+
+                <button data-category="Healthy">🥗 Healthy</button>
+
+                <button data-category="Indian">🍛 Indian</button>
+
+                <button data-category="Cafe">☕ Cafe</button>
+
+                <button data-category="Japanese">🍣 Japanese</button>
+
+            </div>
+
+        </section>
+
+
+        <div id="restaurant-container"></div>
+        <div id="cart"></div>
+        <h3 id="cart-total"></h3>
+        <section>
+            <h2>Why Choose Us for Food Delivery?</h2>
+            <p>We make it easy to discover and enjoy delicious food, wherever you are.</p>
+            <div class="main-features">
+                <div class="feature">
+                    <h3>🧠 AI Recommendations</h3>
+                    <p>Get personalized meal suggestions based on your mood, taste, and budget.</p>
+                </div>
+                <div class="feature">
+                    <h3>Healty Choices</h3>
+                    <p>Discover meals that match your fitness and nutrition goals.</p>
+                </div>
+                <div class="feature">
+                    <h3>Fast Delivery</h3>
+                    <p>Track your order in real time with quick and reliable delivery.</p>
+                </div>
+            </div>
+        </section>
+        <div id="cart-icon" onclick="toggleCart()">
+  🛒
+  <span id="cart-count">0</span>
+</div>
+
+    </main>
+
+    <footer>
+        Copyright &copy; 2026 | All rights reserved
+    </footer>
+    <script src="js/data.js"></script>
+
+    <script src="js/cart.js"></script>
+    <script src="js/home.js"></script>
+    
+</body>
+
+</html>

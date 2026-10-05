@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CraveIQ | Smart Meal Planner</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/mealplanner2.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="CraveIQ">
+            </a>
+        </div>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="investor.html">Investor Relations</a></li>
+
+            <li><a href="add.html">Add Restaurant</a></li>
+
+            <li><a href="login.html">Login</a></li>
+
+            <li><a href="signup.html">Signup</a></li>
+
+            <li>
+                <a href="mealplanner.html" class="active-link">
+                    🤖 Meal Planner
+                </a>
+            </li>
+
+        </ul>
+
+    </header>
+
+
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="planner-hero">
+
+            <h1>🍽 Smart AI Meal Planner</h1>
+
+            <p class="tagline">
+
+                Tell us your budget and nutrition goal.
+
+                CraveIQ will recommend the best meal from our restaurants.
+
+            </p>
+
+        </section>
+
+
+
+
+
+        <!-- ================= FORM ================= -->
+
+        <section class="planner-section">
+
+            <h2>Create Your Meal Plan</h2>
+
+            <div class="planner-card">
+
+                <div class="form-group">
+
+                    <label>💰 Budget (₹)</label>
+
+                    <input
+                        type="number"
+                        id="budget"
+                        placeholder="Example : 200"
+                    >
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label>🎯 Goal</label>
+
+                    <select id="goal">
+
+                        <option value="protein">
+
+                            Protein Rich
+
+                        </option>
+
+                        <option value="budget">
+
+                            Budget Friendly
+
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+
+                <div class="form-group">
+
+                    <label>🥗 Food Preference</label>
+
+                    <select id="preference">
+
+                        <option value="all">
+
+                            All
+
+                        </option>
+
+                        <option value="veg">
+
+                            Veg
+
+                        </option>
+
+                        <option value="nonveg">
+
+                            Non Veg
+
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <button id="generateBtn">
+
+                    🤖 Generate Meal Plan
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- ================= RESULT ================= -->
+
+        <section class="recommendation-section">
+
+            <h2>Your Recommendation</h2>
+
+            <div id="resultCard">
+
+                <div class="empty-card">
+
+                    <h2>🍽 No Meal Selected</h2>
+
+                    <p>
+
+                        Enter your budget and click
+
+                        <b>Generate Meal Plan</b>
+
+                        to receive an AI recommendation.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!-- ================= BENEFITS ================= -->
+
+        <section class="why-section">
+
+            <h2>Why Use Smart Meal Planner?</h2>
+
+            <p>
+
+                Save money while choosing meals that suit your health goals.
+
+            </p>
+
+
+
+            <div class="main-features">
+
+                <div class="feature">
+
+                    <h3>💪 Protein Focused</h3>
+
+                    <p>
+
+                        Finds meals with higher protein within your budget.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="feature">
+
+                    <h3>💸 Budget Friendly</h3>
+
+                    <p>
+
+                        Never spend more than your selected budget.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="feature">
+
+                    <h3>🤖 AI Recommendation</h3>
+
+                    <p>
+
+                        Smart recommendation based on restaurant menus.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        Copyright © 2026 | All rights reserved
+
+    </footer>
+
+
+
+
+
+    <!-- ================= JS ================= -->
+
+    <script src="js/data.js"></script>
+
+    <script src="js/mealplanner.js"></script>
+
+</body>
+
+</html>

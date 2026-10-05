@@ -1,0 +1,488 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #e23744;
+    color: white;
+    height: 60px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #ffd700;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #e23744;
+    color: white;
+}
+
+.logo img {
+    margin:auto;
+    height: 50px;  /* Reduced size */
+    /* 30px */
+    width: auto;   /* Maintain aspect ratio */
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #ffd700;
+}
+
+/* Main Section */
+main {
+    padding: 50px;
+}
+
+main section {
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+/* First Section (hero section) */
+main section:first-of-type {
+    background:
+        linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+        url("../img/background.png") center/cover no-repeat;
+
+    color: white;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section:first-of-type img {
+    height: 100px;
+}
+
+/* Hero Heading */
+main section:first-of-type h1{
+    font-size:55px;
+    font-weight:700;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+/* Hero Tagline */
+.tagline{
+    font-size:22px;
+    width:70%;
+    line-height:1.6;
+    margin-bottom:30px;
+    color:#f5f5f5;
+}
+
+main section:first-of-type input{
+    width:600px;
+    max-width:90%;
+    padding:18px 25px;
+    border:none;
+    border-radius:50px;
+    font-size:18px;
+    outline:none;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+main section:first-of-type input:focus{
+    transform:scale(1.02);
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+/* Second Section (Food Delivery Info) */
+main section:nth-of-type(2) {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+main section:nth-of-type(2) h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #e23744;
+}
+
+main section:nth-of-type(2) p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.main-features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature {
+    width: 250px;
+    background-color: #e23744;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: #e23744;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* new  */
+/* Restaurant Cards */
+
+#restaurant-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+margin-top:50px;
+
+width:100%;
+
+padding:20px;
+
+}
+
+.restaurant-card{
+
+background:white;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+transition:.3s;
+
+cursor:pointer;
+
+}
+
+.restaurant-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.restaurant-card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+}
+
+.restaurant-info{
+
+padding:20px;
+
+color:#333;
+
+}
+
+.restaurant-info h3{
+
+margin-bottom:10px;
+
+}
+
+.restaurant-info p{
+
+margin:8px 0;
+
+}
+
+.restaurant-info button{
+
+width:100%;
+
+padding:12px;
+
+border:none;
+
+border-radius:8px;
+
+background:#e23744;
+
+color:white;
+
+font-size:16px;
+
+cursor:pointer;
+
+margin-top:15px;
+
+}
+
+.restaurant-info button:hover{
+
+background:#c61f32;
+
+}
+
+/* new 2 */
+
+/* ==========================
+   Mood Section
+========================== */
+
+.mood-section{
+    text-align:center;
+    padding:50px 20px;
+    background:#fff;
+}
+
+.mood-section h2{
+    margin-bottom:25px;
+    color:#e23744;
+}
+
+.mood-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.mood-buttons button{
+    padding:12px 20px;
+    border:none;
+    border-radius:30px;
+    background:#e23744;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.mood-buttons button:hover{
+    transform:scale(1.08);
+    background:#c81d3d;
+}
+
+/* new 3 */
+/* Category Section */
+
+.category-section{
+    background:#f9f9f9;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.category-section h2{
+    color:#e23744;
+    margin-bottom:25px;
+}
+
+.category-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.category-buttons button{
+    padding:12px 20px;
+    border:none;
+    border-radius:30px;
+    background:#333;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+    font-size:16px;
+}
+
+.category-buttons button:hover{
+    background:#e23744;
+    transform:scale(1.05);
+}
+
+/* new5 */
+.restaurant-page{
+
+max-width:900px;
+
+margin:auto;
+
+padding:40px;
+
+}
+
+.restaurant-banner{
+
+width:100%;
+
+height:350px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+margin-bottom:30px;
+
+}
+
+.menu-item{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px;
+
+margin:15px 0;
+
+background:white;
+
+border-radius:10px;
+
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+
+}
+
+.menu-item button{
+
+padding:10px 18px;
+
+background:#e23744;
+
+color:white;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+
+/* new  */
+#cart-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff4757;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+#cart-count {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: black;
+  color: white;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cart {
+  position: fixed;
+  right: 20px;
+  bottom: 90px;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  background: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  padding: 10px;
+  display: none;
+  z-index: 1000;
+}
